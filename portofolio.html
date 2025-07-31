@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio proyek-proyek terbaik dari siswa-siswi kelas X TKJ 2. Lihat bukti nyata dari pembelajaran dan kreativitas kami.">
+    <meta name="author" content="HalzzYt">
+    <title>Portofolio - Website Kelas X TKJ 2</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">X TKJ 2</a>
+        <div class="hamburger" role="button" aria-label="Buka menu navigasi">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="profile.html">Profil Kelas</a></li>
+          <li><a href="schedule.html">Jadwal</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="portofolio.html">Portofolio</a></li>
+          <li class="theme-switch-item">
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="theme-toggle-checkbox">
+                <input type="checkbox" id="theme-toggle-checkbox" />
+                <div class="slider"></div>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main-content">
+      <div class="container">
+        <header class="text-center">
+            <h1 class="reveal">Portofolio Proyek</h1>
+            <p class="reveal">Inilah bukti nyata dari apa yang kami pelajari. Kumpulan proyek terbaik dari kelas X TKJ 2, menunjukkan keahlian, kreativitas, dan kerja keras kami.</p>
+        </header>
+        
+        <div class="grid-3">
+            <div class="item-card reveal">
+                <img src="data:image/png;base64,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" alt="Proyek AI Simulator">
+                <div class="item-card-content">
+                    <h3>AI Simulator Tokoh Sejarah</h3>
+                    <p>Proyek pengembangan web interaktif menggunakan HTML, CSS, dan JavaScript, serta integrasi dengan Gemini API untuk menciptakan pengalaman belajar yang unik.</p>
+                    <a href="simulator-ai.html" class="btn">Lihat Proyek</a>
+                </div>
+            </div>            
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2025 - Kelas X TKJ 2.</p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

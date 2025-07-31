@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halaman simulator percakapan dengan tokoh sejarah dan sastra, proyek dari website kelas X TKJ 2.">
+    <meta name="author" content="HalzzYt">
+    <title>Simulator AI - Website Kelas X TKJ 2</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">X TKJ 2</a>
+        <div class="hamburger" role="button" aria-label="Buka menu navigasi">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="profile.html">Profil Kelas</a></li>
+          <li><a href="schedule.html">Jadwal</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="portofolio.html">Portofolio</a></li>
+          <li class="theme-switch-item">
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="theme-toggle-checkbox">
+                <input type="checkbox" id="theme-toggle-checkbox" />
+                <div class="slider"></div>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <div class="container">
+        <div id="selection-screen" class="reveal">
+          <header class="simulator-header">
+            <h1>Simulator Percakapan Sejarah & Sastra</h1>
+            <p>Pilih seorang tokoh untuk memulai percakapan yang mendalam dan belajar langsung dari mereka.</p>
+          </header>
+          <div id="character-list" class="character-grid">
+            </div>
+        </div>
+        
+        <div id="chat-screen" class="hidden">
+          <header class="chat-header">
+            <button id="back-button" class="back-button" aria-label="Kembali ke pemilihan tokoh">&larr; Kembali</button>
+            <div id="chat-character-info">
+              <img id="chat-avatar" src="" alt="Avatar Tokoh">
+              <h2 id="chat-name"></h2>
+            </div>
+          </header>
+          <div id="chat-window" class="chat-window">
+            </div>
+          <footer class="chat-footer">
+            <form id="chat-form" class="chat-form">
+              <input type="text" id="user-input" placeholder="Ketik pertanyaan Anda di sini..." autocomplete="off" required>
+              <button type="submit" aria-label="Kirim pesan">Kirim</button>
+            </form>
+            <div id="loading-indicator" class="hidden">
+              <div class="spinner"></div>
+              <span>AI sedang berpikir...</span>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 - Kelas X TKJ 2.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="simulator-ai-script.js" defer></script>
+  </body>
+</html>
